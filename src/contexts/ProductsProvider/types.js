@@ -1,0 +1,2 @@
+export const ADD_CARINHO = 'ADD_CARINHO';
+export const REMOVE_CARINHO = 'REMOVE_CARINHO';

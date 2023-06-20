@@ -6,7 +6,11 @@ import './styles.css';
 export default function Header(){
     return(
         <header className='header-container'>
-            <h1 className='header-title'>Mercado livre</h1>
+            <h1 className='header-title'>
+                <Link to='/'>
+                    Mercado livre
+                </Link>    
+            </h1>
             <form className='header-form'>
                 <input type='search' className='header-input' placeholder='Busque produtos e muito mais... ' name='seach-produtos' id='seach-produtos'/>
                 <button type='submit' className='header-btn'>
@@ -14,8 +18,8 @@ export default function Header(){
                 </button>
             </form>
             <nav className='header-nav'>
-                <Link> Login </Link>
-                <Link> Criar conta </Link>
+                <Link to='/login'> Login </Link>
+                <Link to='/register'> Criar conta </Link>
                 <Link> <AiOutlineShoppingCart size={25} color='#000'/> </Link>
             </nav>
         </header>

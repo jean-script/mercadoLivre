@@ -1,13 +1,15 @@
 import { BrowserRouter } from "react-router-dom";
 import RouteApp from './routes/';
-
+import { ProdutosProvider } from './contexts/ProductsProvider'
 import Header from "./components/Header";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
-      <RouteApp/>
+      <ProdutosProvider>
+        <Header/>
+        <RouteApp/>
+      </ProdutosProvider>
     </BrowserRouter>
   );
 }
